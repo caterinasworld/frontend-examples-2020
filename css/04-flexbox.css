@@ -4,9 +4,15 @@
   text-align: center;
 }
 
-.box {
+.flex-item {
+  width: 200px;
+  height: 200px;
   background-color: purple;
   color: white;
   margin: 10px;
   padding: 10px;
+}
+
+.flex-container {
+  display: flex;
 }
