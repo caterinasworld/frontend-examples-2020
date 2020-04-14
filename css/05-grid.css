@@ -12,5 +12,5 @@
 
 .grid-container {
   display: grid;
-  grid-gap: 10px;
+  gap: 10px;
 }
