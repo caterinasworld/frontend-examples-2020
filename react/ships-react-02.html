@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16.12.0/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"
+    ></script>
+    <title>SWAPI Starships - React JSX</title>
+    <style>
+      .ship {
+        color: purple;
+        font-size: 1.4em;
+        margin: 1em 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SWAPI Starships - React JSX</h1>
+    <div id="app"></div>
+    <script type="text/babel">
+      const app = document.getElementById('app');
+
+      // Render one element with JSX
+      // const element = <div className='ship'>Millennium Falcon</div>;
+      // ReactDOM.render(element, document.getElementById('app'));
+
+      // Render multiple elements with JSX
+      ReactDOM.render(
+        <div id='starships'>
+          <div className='ship'>Millennium Falcon</div>
+          <div className='ship'>Death Star</div>
+          <div className='ship'>Star Destroyer</div>
+        </div>,
+        app
+      );
+    </script>
+  </body>
+</html>

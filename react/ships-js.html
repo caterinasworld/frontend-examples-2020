@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SWAPI Starships - JavaScript</title>
+    <style>
+      .ship {
+        color: purple;
+        font-size: 1.4em;
+        margin: 1em 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SWAPI Starships - JavaScript</h1>
+    <div id="app"></div>
+    <script type="text/javascript">
+      let app = document.querySelector('#app');
+      let starships = ['Millennium Falcon', 'Death Star', 'Star Destroyer'];
+
+      starships.forEach((item) => {
+        let div = document.createElement('div');
+        div.textContent = item;
+        div.setAttribute('class', 'ship');
+        app.append(div);
+      });
+    </script>
+  </body>
+</html>

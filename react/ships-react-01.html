@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16.12.0/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"
+    ></script>
+    <title>SWAPI Starships - React</title>
+    <style>
+      .ship {
+        color: purple;
+        font-size: 1.4em;
+        margin: 1em 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SWAPI Starships - React.createElement()</h1>
+    <div id="app"></div>
+    <script type="text/javascript">
+      const app = document.getElementById('app');
+
+      // const element = React.createElement(
+      //   'div',
+      //   { id: '1', className: 'ship' },
+      //   'Millennium Falcon'
+      // );
+      // ReactDOM.render(element, app);
+
+      const starships = React.createElement('div', {}, [
+        React.createElement('div', { className: 'ship' }, 'Millennium Falcon'),
+        React.createElement('div', { className: 'ship' }, 'Death Star'),
+        React.createElement('div', { className: 'ship' }, 'Star Destroyer'),
+      ]);
+
+      ReactDOM.render(starships, app);
+    </script>
+  </body>
+</html>
