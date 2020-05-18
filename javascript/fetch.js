@@ -5,10 +5,6 @@ let fetchData = (url) => {
     .then((response) => response.json())
     .then((data) => {
       console.log(data); // object
-      console.log(data.name);
-      console.log(data.height);
-      console.log(data.mass);
-      console.log(data.birth_year);
     })
     .catch((error) => console.log(error));
 };
