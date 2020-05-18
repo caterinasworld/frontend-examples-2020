@@ -14,9 +14,7 @@ class App extends React.Component {
   fetchData(url) {
     fetch(url)
       .then((res) => res.json())
-      .then((data) => {
-        return data.results;
-      })
+      .then((data) => data.results)
       .then((data) => {
         this.setState({
           starships: data,
@@ -36,8 +34,8 @@ class App extends React.Component {
 
     return (
       <React.Fragment>
-        <h1>SWAPI Starships - CRA with Class Components</h1>
-        {!isLoaded && <p>Loading...</p>}
+        <h1 className='heading'>SWAPI Starships - CRA with Class Components</h1>
+        {!isLoaded && <p>Data Loading...</p>}
 
         <Starship starshipData={starships} />
       </React.Fragment>
