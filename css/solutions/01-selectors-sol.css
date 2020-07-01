@@ -8,15 +8,7 @@ body {
 
 /* style selectors for first exercise */
 
-/* li[class] {
-  color: crimson;
-} */
-
-li[id='cat'] {
-  color: green;
-}
-
-.list-item[class~='dog'] {
+li[class~='dog'] {
   color: magenta;
 }
 
@@ -42,7 +34,7 @@ section li {
   font-weight: bold;
 }
 
-.first ~ li {
+.second ~ li {
   color: darkmagenta;
 }
 
