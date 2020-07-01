@@ -3,27 +3,33 @@
 }
 
 div {
-  width: 600px;
-  height: 600px;
-  /* width: 80%; */
-  color: #fefefe;
-  background-color: rebeccapurple;
-  font-size: 1.5rem;
+  width: 400px;
+  margin: 10px auto;
+  border: 10px dashed rgb(179, 179, 230);
+  border-radius: 10px;
 
+  /* Options for specifying the padding property */
   /* padding-top: 10px;
   padding-right: 20px;
   padding-bottom: 30px;
   padding-left: 40px; */
+  /* padding: 40px 30px 20px 10px; */
   /* padding: 20px; */
-  /* padding: 10px 20px 30px 40px; */
-  padding: 20px 30px;
+  padding: 20px 40px;
 
-  border: 10px dashed rgb(179, 179, 230);
-  border-radius: 10px;
-
-  margin: 10px auto;
+  background-color: rebeccapurple;
+  color: #fefefe;
+  font-size: 1.5rem;
 }
 
+/* Display: none example  */
+/* Box-sizing: content-box vs border-box */
+.border-box {
+  display: none;
+  box-sizing: border-box;
+}
+
+/* Size units: em vs rem */
 p {
   font-size: 1.5rem;
 }
