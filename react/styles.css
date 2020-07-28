@@ -1,0 +1,17 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: darkgreen;
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.4em;
+}
+
+.ship {
+  font-size: 1.4em;
+  margin: 1em 0;
+}
