@@ -4,7 +4,7 @@ import App from './App';
 import StarshipFleet from './StarshipFleet';
 
 if (process.env.NODE_ENV !== 'production') {
-  const axe = require('react-axe');
+  const axe = require('@axe-core/react');
   axe(React, ReactDOM, 1000);
 }
 
